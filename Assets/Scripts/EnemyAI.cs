@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
 
     NavMeshAgent navMeshAgent;
     float distanceToTaget = Mathf.Infinity;
+    bool isFroboked = false;
 
     void Start()
     {
@@ -21,10 +22,36 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         distanceToTaget = Vector3.Distance(target.position, transform.position);
-        if(distanceToTaget < chaseRange)
+        if(isFroboked)
         {
-            navMeshAgent.SetDestination(target.position);
+            EngageTarget();
         }
+        else if(distanceToTaget <= chaseRange)
+        {
+            isFroboked = true;
+        }
+    }
+
+    void EngageTarget()
+    {
+        if(distanceToTaget >= navMeshAgent.stoppingDistance)
+        {
+            ChaseTarget();
+        }
+        if(distanceToTaget <= navMeshAgent.stoppingDistance)
+        {
+            AttackTarget();
+        }
+    }
+
+    void ChaseTarget()
+    {
+        navMeshAgent.SetDestination(target.position);
+    }
+
+    void AttackTarget()
+    {
+        Debug.Log("you attacked jombie");
     }
 
     void OnDrawGizmosSelected()
