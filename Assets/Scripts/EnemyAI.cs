@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] float chaseRange = 5f;
+
     
 
     NavMeshAgent navMeshAgent;
@@ -16,6 +17,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
@@ -26,7 +28,7 @@ public class EnemyAI : MonoBehaviour
         {
             EngageTarget();
         }
-        else if(distanceToTaget <= chaseRange)
+        else if(distanceToTaget < chaseRange)
         {
             isFroboked = true;
         }
@@ -34,11 +36,11 @@ public class EnemyAI : MonoBehaviour
 
     void EngageTarget()
     {
-        if(distanceToTaget >= navMeshAgent.stoppingDistance)
+        if(distanceToTaget > navMeshAgent.stoppingDistance)
         {
             ChaseTarget();
         }
-        if(distanceToTaget <= navMeshAgent.stoppingDistance)
+        if(distanceToTaget < navMeshAgent.stoppingDistance)
         {
             AttackTarget();
         }
@@ -46,12 +48,17 @@ public class EnemyAI : MonoBehaviour
 
     void ChaseTarget()
     {
+        GetComponent<Animator>().SetBool("Attack", false);
+        GetComponent<Animator>().SetTrigger("Move");
         navMeshAgent.SetDestination(target.position);
+        
     }
 
     void AttackTarget()
     {
+        GetComponent<Animator>().SetBool("Attack", true);
         Debug.Log("you attacked jombie");
+
     }
 
     void OnDrawGizmosSelected()
