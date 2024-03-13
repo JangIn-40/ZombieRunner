@@ -1910,6 +1910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6102342332190247678, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 8997996947975355014}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
 --- !u!4 &8997996947975355012 stripped
@@ -1932,3 +1936,14 @@ MonoBehaviour:
   fpsCamera: {fileID: 0}
   zoomedOutFOV: 40
   zoomedInFOV: 20
+--- !u!114 &8997996947975355014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6571978199546937295, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
+  m_PrefabInstance: {fileID: 5521814555461901605}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534240616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450a7ed1f3a3cf4478e7dbd559b76dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
