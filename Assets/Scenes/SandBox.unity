@@ -1834,6 +1834,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 489729476601331242, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1643558492232450310, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
       propertyPath: GameOverCanves
       value: 
@@ -1855,8 +1859,16 @@ PrefabInstance:
       value: 0.00000010430813
       objectReference: {fileID: 0}
     - target: {fileID: 3483980092313306766, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483980092313306766, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483980092313306766, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3494269504882337697, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
       propertyPath: m_RootOrder
@@ -1914,6 +1926,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 8997996947975355014}
+    - target: {fileID: 8413028211446270898, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
 --- !u!4 &8997996947975355012 stripped
