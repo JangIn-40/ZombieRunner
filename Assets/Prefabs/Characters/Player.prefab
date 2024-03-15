@@ -434,6 +434,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 7456210489866927102}
     m_Modifications:
     - target: {fileID: 945478346, guid: 83e2f44150e45824a8b30409e9fde3d0, type: 3}
+      propertyPath: range
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 945478346, guid: 83e2f44150e45824a8b30409e9fde3d0, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 945478346, guid: 83e2f44150e45824a8b30409e9fde3d0, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 6571978199546937295}
@@ -441,6 +449,10 @@ PrefabInstance:
       propertyPath: FPSCamera
       value: 
       objectReference: {fileID: 3483980092313306761}
+    - target: {fileID: 945478346, guid: 83e2f44150e45824a8b30409e9fde3d0, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: 83e2f44150e45824a8b30409e9fde3d0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -504,6 +516,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 7456210489866927102}
     m_Modifications:
     - target: {fileID: 945478346, guid: df4592a19cf070646930964ad6be201d, type: 3}
+      propertyPath: range
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 945478346, guid: df4592a19cf070646930964ad6be201d, type: 3}
+      propertyPath: damage
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 945478346, guid: df4592a19cf070646930964ad6be201d, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 6571978199546937295}
@@ -511,6 +531,10 @@ PrefabInstance:
       propertyPath: FPSCamera
       value: 
       objectReference: {fileID: 3483980092313306761}
+    - target: {fileID: 945478346, guid: df4592a19cf070646930964ad6be201d, type: 3}
+      propertyPath: timeBetweenShots
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: df4592a19cf070646930964ad6be201d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -719,6 +743,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 7456210489866927102}
     m_Modifications:
     - target: {fileID: 945478346, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: range
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 945478346, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 945478346, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 6571978199546937295}
@@ -726,6 +758,10 @@ PrefabInstance:
       propertyPath: FPSCamera
       value: 
       objectReference: {fileID: 3483980092313306761}
+    - target: {fileID: 945478346, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_RootOrder
       value: 2
