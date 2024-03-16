@@ -1838,9 +1838,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 240505243959227501, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
+      propertyPath: currentWeapon
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 489729476601331242, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1643558492232450310, guid: 0435503e0b66bf24d91d4e8219e38a98, type: 3}
       propertyPath: GameOverCanves
