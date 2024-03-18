@@ -359,7 +359,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450a7ed1f3a3cf4478e7dbd559b76dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 20
+  - ammoType: 2
+    ammoAmount: 8
 --- !u!1 &8485881212319581248
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8acc36de867d4b408ab81a691142545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1001 &1343215553857272227
 PrefabInstance:
   m_ObjectHideFlags: 0
