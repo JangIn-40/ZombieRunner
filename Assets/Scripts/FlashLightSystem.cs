@@ -9,11 +9,11 @@ public class FlashLightSystem : MonoBehaviour
     [SerializeField] float angleDecay = 1f;
     [SerializeField] float minimumAngle = 40f;
 
-    Light mylight;
+    Light myLight;
 
     void Start()
     {
-        mylight = GetComponent<Light>();
+        myLight = GetComponent<Light>();
     }
 
     void Update()
@@ -22,20 +22,30 @@ public class FlashLightSystem : MonoBehaviour
         DecreaseLightIntensity();
     }
 
+    public void RestoreLightAngle(float restoreAngle)
+    {
+        myLight.spotAngle = restoreAngle; 
+    }
+
+    public void AddLightIntensity(float addIntensity)
+    {
+        myLight.intensity += addIntensity;
+    }
+
     void DecreaseLightAngle()
     {
-        if(mylight.spotAngle <= minimumAngle) 
+        if(myLight.spotAngle <= minimumAngle) 
         {
             return;
         }
         else
         {
-            mylight.spotAngle -= angleDecay * Time.deltaTime;
+            myLight.spotAngle -= angleDecay * Time.deltaTime;
         }
     }
 
     void DecreaseLightIntensity()
     {
-        mylight.intensity -= lightDecay * Time.deltaTime;
+        myLight.intensity -= lightDecay * Time.deltaTime;
     }
 }

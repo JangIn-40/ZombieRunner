@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 4513912067405868249}
   - component: {fileID: 1643558492232450310}
   - component: {fileID: 6571978199546937295}
+  - component: {fileID: 3736204966058869531}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -366,6 +367,20 @@ MonoBehaviour:
     ammoAmount: 20
   - ammoType: 2
     ammoAmount: 8
+--- !u!114 &3736204966058869531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266583632863149339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd036d4042a273b4d974ba338cdaee85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitCanvas: {fileID: 0}
+  hitTime: 0.3
 --- !u!1 &8485881212319581248
 GameObject:
   m_ObjectHideFlags: 0

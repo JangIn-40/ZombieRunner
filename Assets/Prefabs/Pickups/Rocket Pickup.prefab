@@ -161,7 +161,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket Pickup
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5035879251040227742, guid: 669a775dd8aeb324ab7d5821fd96ab9f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 669a775dd8aeb324ab7d5821fd96ab9f, type: 3}
 --- !u!4 &5504435780342849171 stripped
 Transform:
